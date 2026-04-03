@@ -19,7 +19,7 @@ async def track_my_collection():
             url = f"https://api.tcgdex.net/v2/en/cards/{card_id}"
             response = requests.get(url)
             data = response.json()
-            print(data) # Print entire JSON
+            #print(data) # Print entire JSON
             
             name = data.get('name', 'Unknown')
             set_info = data.get('set', {})
